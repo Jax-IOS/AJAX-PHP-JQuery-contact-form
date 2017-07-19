@@ -6,6 +6,8 @@ function sendContact() {
     type: "POST", // declare type of post
     success:function(data){ // if successful (true) call function in if statement. Displayed to Div.
     $("#mail-status").html(data);
+    $('textarea').val('');
+    $('input').val('');
     },
     error:function (){} // if failed (false) call function in if statement. Displayed to Div.
     });
